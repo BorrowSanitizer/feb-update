@@ -1,0 +1,8 @@
+[package]
+name = "testbench"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hashbrown = "0.16.1"
+rand = "0.10.0"
