@@ -40,5 +40,5 @@ if __name__ == "__main__":
         for f in os.listdir(dir)
         if f.endswith(".json")
     ]
-    output_csv_name = "benchmark_times.csv"
+    output_csv_name = "data.csv"
     extract_times_to_csv(paths, output_csv_name)
