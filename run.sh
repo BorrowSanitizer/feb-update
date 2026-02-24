@@ -12,7 +12,7 @@ CARGO_TARGET_DIR=./target/asan RUSTFLAGS="-Cunsafe-allow-abi-mismatch=sanitizer 
 CARGO_TARGET_DIR=./target/tsan RUSTFLAGS="-Cunsafe-allow-abi-mismatch=sanitizer -Zsanitizer=thread --target=x86_64-unknown-linux-gnu" RUSTDOCFLAGS=$RUSTFLAGS cargo build -Zbuild-std
 hyperfine -N --prepare="sync" --warmup=$WARMUP --runs=$RUNS --export-json=./target/bench/AddressSanitizer.json "./target/asan/debug/testbench"
 hyperfine -N --prepare="sync" --warmup=$WARMUP --runs=$RUNS --export-json=./target/bench/ThreadSanitizer.json "./target/tsan/debug/testbench"
-hyperfine -N --prepare="sync" --warmup=$WARMUP --runs=$RUNS --export-json=./target/bench/release.json "./target/release/testbench"
-hyperfine -N --prepare="sync" --warmup=$WARMUP --runs=$RUNS --export-json=./target/bench/debug.json "./target/debug/testbench"
+hyperfine -N --prepare="sync" --warmup=$WARMUP --runs=$RUNS --export-json=./target/bench/Release.json "./target/release/testbench"
+hyperfine -N --prepare="sync" --warmup=$WARMUP --runs=$RUNS --export-json=./target/bench/Debug.json "./target/debug/testbench"
 hyperfine -N --prepare="sync" --warmup=$WARMUP --runs=$RUNS --export-json=./target/bench/BorrowSanitizer.json "cargo bsan run"
 MIRIFLAGS="$MFLAGS" hyperfine -N --prepare="sync" --warmup=$WARMUP --runs=$RUNS --export-json=./target/bench/Miri.json "cargo miri run"
