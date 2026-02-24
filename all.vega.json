@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "A vertical box plot showing median, min, and max body mass of penguins.",
   "data": {
-    "url": "https://gist.githubusercontent.com/icmccorm/5ce467376997ffc12b2f5e80d31b91c3/raw/dd7bebcf5a242138740ea5bae765350dfe906fde/data.csv"
+    "url": "https://raw.githubusercontent.com/BorrowSanitizer/feb-update/refs/heads/main/data.csv"
   },
   "mark": {
     "type": "bar"
@@ -33,7 +33,7 @@
       "scale": {
         "type": "log"
       },
-      "title": "Execution Time (sec)"
+      "title": "Execution Time - log(sec)"
     }
   }
 }
