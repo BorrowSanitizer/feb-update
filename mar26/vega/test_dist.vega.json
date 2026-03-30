@@ -60,7 +60,7 @@
       "type": "nominal",
       "legend": {
         "title": null,
-        "labelFontSize": 12,
+        "labelFontSize": 12
       },
       "sort": ["Pass", "Fail"]
     },
