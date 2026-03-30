@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 250,
+  "height": 200,
+  "data": {"values": [{}]},
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {"category": "Completed", "value": 323},
+          {"category": "Remaining (UB)", "value": 58},
+          {"category": "Remaining (Exit 0)", "value": 24}
+        ]
+      },
+      "mark": {"type": "arc", "innerRadius": 120},
+      "encoding": {
+        "theta": {"field": "value", "type": "quantitative"},
+
+        "color": {"field": "category", "type": "nominal", 
+        "scale": {
+            "domain": ["Remaining (UB)", "Remaining (Exit 0)", "Completed"],
+            "range": ["red", "orange", "#3bd163"]
+          },
+        "legend": {
+          "title": "Category",
+          "titleFontSize": 14,
+          "labelFontSize": 12
+        }}
+      }
+    },
+    {
+      "transform": [{"calculate": "'80%'", "as": "t"}],
+      "mark": {"type": "text", "dy": -20, "fontSize": 45, "fill": "black"},
+      "encoding": {"text": {"field": "t"}}
+    },
+    {
+      "transform": [{"calculate": "'Tests Passing'", "as": "t"}],
+      "mark": {"type": "text", "dy": 25, "fontSize": 24, "fill": "black"},
+      "encoding": {"text": {"field": "t"}}
+    }
+  ]
+}

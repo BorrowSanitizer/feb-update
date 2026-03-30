@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "A simple pie chart with labels.",
+  "width": 250,
+  "height": 200,
+  "title": {
+    "text": "Miri's Integration Tests By Category",
+    "fontSize": 16
+  },
+  "data": {
+    "values": [
+      {
+        "category": "Pass",
+        "num_tests": 353
+      },
+      {
+        "category": "Fail",
+        "num_tests": 507
+      },
+      {
+        "category": "Panic",
+        "num_tests": 13
+      },
+      {
+        "category": "Pass (dependencies)",
+        "num_tests": 56
+      },
+      {
+        "category": "Fail (dependencies)",
+        "num_tests": 84
+      },
+      {
+        "category": "Native Library",
+        "num_tests": 15
+      },
+      {
+        "category": "GenMC",
+        "num_tests": 66
+      },
+      {
+        "category": "Many Seeds",
+        "num_tests": 3
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "indexof(['Pass', 'Fail'], datum.category)",
+      "as": "order_idx"
+    }
+  ],
+  "encoding": {
+    "theta": {
+      "field": "num_tests",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": {
+        "title": null,
+        "labelFontSize": 12,
+      },
+      "sort": ["Pass", "Fail"]
+    },
+    "order": {
+      "field": "order_idx",
+      "type": "quantitative"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "outerRadius": 80
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 95,
+        "fill": "black",
+        "fontSize": 12
+      },
+      "encoding": {
+        "text": {
+          "field": "num_tests",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

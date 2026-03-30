@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 250,
+  "height": 200,
+  "title": {
+    "text": "Outcomes for \"Pass\" and \"Fail\" Tests",
+    "fontSize": 16
+  },
+  "data": {
+    "values": [
+      {
+        "category": "Aliasing UB",
+        "num_tests": 92
+      },
+      {
+        "category": "Baseline UB",
+        "num_tests": 26
+      },
+      {
+        "category": "Excluded",
+        "num_tests": 134
+      },
+      {
+        "category": "Exit 0",
+        "num_tests": 287
+      },
+      {
+        "category": "Exit 1",
+        "num_tests": 62
+      },
+      {
+        "category": "Other UB",
+        "num_tests": 259
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "indexof(['Exit 0', 'Aliasing UB', 'Baseline UB'], datum.category)",
+      "as": "order_idx"
+    }
+  ],
+  "encoding": {
+    "theta": {
+      "field": "num_tests",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": {
+        "title": null,
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      }, 
+      "sort": ["Exit 0", "Aliasing UB", "Baseline UB"]
+    },
+    "order":{
+      "field": "order_idx"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "outerRadius": 80
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 95,
+        "fill": "black",
+        "fontSize": 12
+      },
+      "encoding": {
+        "text": {
+          "field": "num_tests",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

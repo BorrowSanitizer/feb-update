@@ -1,0 +1,861 @@
+src_file,category,dst_file
+tests/pass/atomic-compare-exchange-weak-never-fail.rs,Excluded,
+tests/pass/cfg_miri.rs,Excluded,
+tests/pass/open_a_file_in_proc.rs,Excluded,
+tests/pass/miri_start_no_std.rs,Excluded,
+tests/pass/unops.rs,Exit 0,miri-tests/pass/unops.rs
+tests/pass/enum_discriminant_ptr_value.rs,Other UB,
+tests/pass/enums.rs,Exit 0,miri-tests/pass/enums.rs
+tests/pass/atomic-readonly-load.rs,Exit 0,miri-tests/pass/atomic-readonly-load.rs
+tests/pass/closure-drop.rs,Exit 0,miri-tests/pass/closure-drop.rs
+tests/pass/move-arg-3-unique.rs,Exit 0,miri-tests/pass/move-arg-3-unique.rs
+tests/pass/tuple_like_enum_variant_constructor_pointer_opt.rs,Exit 0,miri-tests/pass/tuple_like_enum_variant_constructor_pointer_opt.rs
+tests/pass/specialization.rs,Exit 0,miri-tests/pass/specialization.rs
+tests/pass/float_extra_rounding_error.rs,Exit 1,
+tests/pass/trivial.rs,Exit 0,miri-tests/pass/trivial.rs
+tests/pass/strange_references.rs,Exit 0,miri-tests/pass/strange_references.rs
+tests/pass/slices.rs,Exit 0,miri-tests/pass/slices.rs
+tests/pass/sums.rs,Exit 0,miri-tests/pass/sums.rs
+tests/pass/drop_on_zst_array_elements.rs,Exit 0,miri-tests/pass/drop_on_zst_array_elements.rs
+tests/pass/alloc-access-tracking.rs,Excluded,
+tests/pass/arrays.rs,Exit 0,miri-tests/pass/arrays.rs
+tests/pass/associated-const.rs,Exit 0,miri-tests/pass/associated-const.rs
+tests/pass/sendable-class.rs,Exit 0,miri-tests/pass/sendable-class.rs
+tests/pass/async-closure.rs,Exit 0,miri-tests/pass/async-closure.rs
+tests/pass/format.rs,Exit 0,miri-tests/pass/format.rs
+tests/pass/ptr_int_casts.rs,Exit 0,miri-tests/pass/ptr_int_casts.rs
+tests/pass/memchr.rs,Exit 0,miri-tests/pass/memchr.rs
+tests/pass/align_offset_symbolic.rs,Exit 0,miri-tests/pass/align_offset_symbolic.rs
+tests/pass/assume_bug.rs,Exit 0,miri-tests/pass/assume_bug.rs
+tests/pass/intptrcast.rs,Exit 0,miri-tests/pass/intptrcast.rs
+tests/pass/static_mut.rs,Exit 0,miri-tests/pass/static_mut.rs
+tests/pass/ptr_int_transmute.rs,Exit 0,miri-tests/pass/ptr_int_transmute.rs
+tests/pass/small_enum_size_bug.rs,Exit 0,miri-tests/pass/small_enum_size_bug.rs
+tests/pass/overloaded-calls-simple.rs,Exit 0,miri-tests/pass/overloaded-calls-simple.rs
+tests/pass/dyn-arbitrary-self.rs,Exit 0,miri-tests/pass/dyn-arbitrary-self.rs
+tests/pass/rc.rs,Exit 0,miri-tests/pass/rc.rs
+tests/pass/negative_discriminant.rs,Exit 0,miri-tests/pass/negative_discriminant.rs
+tests/pass/box-custom-alloc.rs,Exit 0,miri-tests/pass/box-custom-alloc.rs
+tests/pass/dst-struct.rs,Exit 0,miri-tests/pass/dst-struct.rs
+tests/pass/disjoint-array-accesses.rs,Exit 0,miri-tests/pass/disjoint-array-accesses.rs
+tests/pass/protector-gc.rs,Excluded,
+tests/pass/float_nan.rs,Excluded,
+tests/pass/fat_ptr.rs,Exit 0,miri-tests/pass/fat_ptr.rs
+tests/pass/coroutine.rs,Exit 0,miri-tests/pass/coroutine.rs
+tests/pass/move-data-across-await-point.rs,Exit 0,miri-tests/pass/move-data-across-await-point.rs
+tests/pass/bad_substs.rs,Exit 0,miri-tests/pass/bad_substs.rs
+tests/pass/move-uninit-primval.rs,Exit 0,miri-tests/pass/move-uninit-primval.rs
+tests/pass/prefetch.rs,Exit 0,miri-tests/pass/prefetch.rs
+tests/pass/reentrant-println.rs,Exit 0,miri-tests/pass/reentrant-println.rs
+tests/pass/linked-list.rs,Exit 0,miri-tests/pass/linked-list.rs
+tests/pass/vec-matching-fold.rs,Exit 0,miri-tests/pass/vec-matching-fold.rs
+tests/pass/drop_through_trait_object.rs,Exit 0,miri-tests/pass/drop_through_trait_object.rs
+tests/pass/global_allocator.rs,Exit 0,miri-tests/pass/global_allocator.rs
+tests/pass/path.rs,Excluded,
+tests/pass/closures.rs,Exit 0,miri-tests/pass/closures.rs
+tests/pass/cast_fn_ptr_unsafe.rs,Exit 0,miri-tests/pass/cast_fn_ptr_unsafe.rs
+tests/pass/send-is-not-static-par-for.rs,Exit 0,miri-tests/pass/send-is-not-static-par-for.rs
+tests/pass/drop_through_trait_object_rc.rs,Exit 0,miri-tests/pass/drop_through_trait_object_rc.rs
+tests/pass/dyn-upcast.rs,Exit 0,miri-tests/pass/dyn-upcast.rs
+tests/pass/packed_struct.rs,Exit 0,miri-tests/pass/packed_struct.rs
+tests/pass/cast_fn_ptr.rs,Exit 0,miri-tests/pass/cast_fn_ptr.rs
+tests/pass/drop_through_owned_slice.rs,Exit 0,miri-tests/pass/drop_through_owned_slice.rs
+tests/pass/zst_variant_drop.rs,Exit 0,miri-tests/pass/zst_variant_drop.rs
+tests/pass/extern_types.rs,Exit 0,miri-tests/pass/extern_types.rs
+tests/pass/unsized.rs,Exit 0,miri-tests/pass/unsized.rs
+tests/pass/cast-rfc0401-vtable-kinds.rs,Exit 0,miri-tests/pass/cast-rfc0401-vtable-kinds.rs
+tests/pass/c-variadic-ignored-argument.rs,Exit 0,miri-tests/pass/c-variadic-ignored-argument.rs
+tests/pass/iter.rs,Exit 0,miri-tests/pass/iter.rs
+tests/pass/async-closure-captures.rs,Exit 0,miri-tests/pass/async-closure-captures.rs
+tests/pass/ptr_raw.rs,Exit 0,miri-tests/pass/ptr_raw.rs
+tests/pass/strings.rs,Exit 0,miri-tests/pass/strings.rs
+tests/pass/async-drop.rs,Exit 0,miri-tests/pass/async-drop.rs
+tests/pass/btreemap.rs,Exit 0,miri-tests/pass/btreemap.rs
+tests/pass/dst-struct-sole.rs,Exit 0,miri-tests/pass/dst-struct-sole.rs
+tests/pass/memleak_ignored.rs,Exit 1,
+tests/pass/catch.rs,Exit 0,miri-tests/pass/catch.rs
+tests/pass/box-custom-alloc-aliasing.rs,Exit 0,miri-tests/pass/box-custom-alloc-aliasing.rs
+tests/pass/drop_on_array_elements.rs,Exit 0,miri-tests/pass/drop_on_array_elements.rs
+tests/pass/validation_lifetime_resolution.rs,Exit 0,miri-tests/pass/validation_lifetime_resolution.rs
+tests/pass/dyn-traits.rs,Excluded,
+tests/pass/hide_stdout.rs,Exit 0,miri-tests/pass/hide_stdout.rs
+tests/pass/miri-alloc.rs,Excluded,
+tests/pass/match_slice.rs,Exit 0,miri-tests/pass/match_slice.rs
+tests/pass/dst-raw.rs,Exit 0,miri-tests/pass/dst-raw.rs
+tests/pass/provenance.rs,Exit 0,miri-tests/pass/provenance.rs
+tests/pass/track-caller-attribute.rs,Exit 0,miri-tests/pass/track-caller-attribute.rs
+tests/pass/tuple_like_enum_variant_constructor.rs,Exit 0,miri-tests/pass/tuple_like_enum_variant_constructor.rs
+tests/pass/miri_start_with_std.rs,Excluded,
+tests/pass/tag-align-dyn-u64.rs,Exit 0,miri-tests/pass/tag-align-dyn-u64.rs
+tests/pass/disable-alignment-check.rs,Other UB,
+tests/pass/async-closure-drop.rs,Exit 0,miri-tests/pass/async-closure-drop.rs
+tests/pass/multi_arg_closure.rs,Exit 0,miri-tests/pass/multi_arg_closure.rs
+tests/pass/static_align.rs,Exit 0,miri-tests/pass/static_align.rs
+tests/pass/mpsc.rs,Exit 0,miri-tests/pass/mpsc.rs
+tests/pass/tuple_like_struct_constructor.rs,Exit 0,miri-tests/pass/tuple_like_struct_constructor.rs
+tests/pass/zst_box.rs,Exit 0,miri-tests/pass/zst_box.rs
+tests/pass/target-spec-implies-target-feature.rs,Excluded,
+tests/pass/function_pointers.rs,Excluded,
+tests/pass/float.rs,Excluded,
+tests/pass/union.rs,Exit 0,miri-tests/pass/union.rs
+tests/pass/u128.rs,Exit 0,miri-tests/pass/u128.rs
+tests/pass/vecdeque.rs,Exit 0,miri-tests/pass/vecdeque.rs
+tests/pass/zst.rs,Exit 0,miri-tests/pass/zst.rs
+tests/pass/pattern-types.rs,Exit 0,miri-tests/pass/pattern-types.rs
+tests/pass/recursive_static.rs,Exit 0,miri-tests/pass/recursive_static.rs
+tests/pass/constants.rs,Exit 0,miri-tests/pass/constants.rs
+tests/pass/wtf8.rs,Excluded,
+tests/pass/hashmap.rs,Exit 0,miri-tests/pass/hashmap.rs
+tests/pass/address-reuse.rs,Exit 0,miri-tests/pass/address-reuse.rs
+tests/pass/option_box_transmute_ptr.rs,Exit 0,miri-tests/pass/option_box_transmute_ptr.rs
+tests/pass/dst-field-align.rs,Exit 0,miri-tests/pass/dst-field-align.rs
+tests/pass/many_shr_bor.rs,Exit 0,miri-tests/pass/many_shr_bor.rs
+tests/pass/binops.rs,Exit 0,miri-tests/pass/binops.rs
+tests/pass/coercions.rs,Exit 0,miri-tests/pass/coercions.rs
+tests/pass/async-niche-aliasing.rs,Exit 0,miri-tests/pass/async-niche-aliasing.rs
+tests/pass/observed_local_mut.rs,Aliasing UB,miri-tests/fail/aliasing/observed_local_mut.rs
+tests/pass/partially-uninit.rs,Exit 0,miri-tests/pass/partially-uninit.rs
+tests/pass/target-cpu-implies-target-feature.rs,Excluded,
+tests/pass/drop_empty_slice.rs,Exit 0,miri-tests/pass/drop_empty_slice.rs
+tests/pass/sysroot.rs,Exit 0,miri-tests/pass/sysroot.rs
+tests/pass/enum-nullable-const-null-with-fields.rs,Exit 0,miri-tests/pass/enum-nullable-const-null-with-fields.rs
+tests/pass/overflow_checks_off.rs,Exit 1,
+tests/pass/regions-lifetime-nonfree-late-bound.rs,Exit 0,miri-tests/pass/regions-lifetime-nonfree-late-bound.rs
+tests/pass/packed-struct-dyn-trait.rs,Exit 0,miri-tests/pass/packed-struct-dyn-trait.rs
+tests/pass/tuple_like_enum_variant_constructor_struct_pointer_opt.rs,Exit 0,miri-tests/pass/tuple_like_enum_variant_constructor_struct_pointer_opt.rs
+tests/pass/main_result.rs,Exit 0,miri-tests/pass/main_result.rs
+tests/pass/bools.rs,Exit 0,miri-tests/pass/bools.rs
+tests/pass/transmute_ptr.rs,Exit 0,miri-tests/pass/transmute_ptr.rs
+tests/pass/const-addrs.rs,Exit 0,miri-tests/pass/const-addrs.rs
+tests/pass/empty_main.rs,Exit 0,miri-tests/pass/empty_main.rs
+tests/pass/pointers.rs,Exit 0,miri-tests/pass/pointers.rs
+tests/pass/imported_main.rs,Exit 0,miri-tests/pass/imported_main.rs
+tests/pass/atomic.rs,Exit 0,miri-tests/pass/atomic.rs
+tests/pass/subslice_array.rs,Exit 0,miri-tests/pass/subslice_array.rs
+tests/pass/too-large-primval-write-problem.rs,Exit 0,miri-tests/pass/too-large-primval-write-problem.rs
+tests/pass/drop_type_without_drop_glue.rs,Exit 0,miri-tests/pass/drop_type_without_drop_glue.rs
+tests/pass/hello.rs,Exit 0,miri-tests/pass/hello.rs
+tests/pass/heap.rs,Exit 0,miri-tests/pass/heap.rs
+tests/pass/vec.rs,Excluded,
+tests/pass/ptr_int_from_exposed.rs,Exit 0,miri-tests/pass/ptr_int_from_exposed.rs
+tests/pass/leak-in-static.rs,Exit 0,miri-tests/pass/leak-in-static.rs
+tests/pass/from_utf8.rs,Exit 0,miri-tests/pass/from_utf8.rs
+tests/pass/rename_std.rs,Exit 0,miri-tests/pass/rename_std.rs
+tests/pass/binary-heap.rs,Exit 0,miri-tests/pass/binary-heap.rs
+tests/pass/loop-break-value.rs,Exit 0,miri-tests/pass/loop-break-value.rs
+tests/pass/products.rs,Exit 0,miri-tests/pass/products.rs
+tests/pass/drop_on_fat_ptr_array_elements.rs,Exit 0,miri-tests/pass/drop_on_fat_ptr_array_elements.rs
+tests/pass/underscore_pattern.rs,Exit 0,miri-tests/pass/underscore_pattern.rs
+tests/pass/coerce_non_capture_closure_to_fn_ptr.rs,Exit 0,miri-tests/pass/coerce_non_capture_closure_to_fn_ptr.rs
+tests/pass/future-self-referential.rs,Exit 0,miri-tests/pass/future-self-referential.rs
+tests/pass/const-vec-of-fns.rs,Exit 0,miri-tests/pass/const-vec-of-fns.rs
+tests/pass/ptr_offset.rs,Exit 0,miri-tests/pass/ptr_offset.rs
+tests/pass/c_enums.rs,Exit 0,miri-tests/pass/c_enums.rs
+tests/pass/calls.rs,Exit 0,miri-tests/pass/calls.rs
+tests/pass/loops.rs,Exit 0,miri-tests/pass/loops.rs
+tests/pass/last-use-in-cap-clause.rs,Exit 0,miri-tests/pass/last-use-in-cap-clause.rs
+tests/pass/char.rs,Exit 0,miri-tests/pass/char.rs
+tests/pass/rfc1623.rs,Exit 0,miri-tests/pass/rfc1623.rs
+tests/pass/function_calls/target_feature.rs,Excluded,
+tests/pass/deriving-associated-types.rs,Exit 0,miri-tests/pass/deriving-associated-types.rs
+tests/pass/async-fn.rs,Exit 0,miri-tests/pass/async-fn.rs
+tests/pass/getpid.rs,Exit 0,miri-tests/pass/getpid.rs
+tests/pass/drop_in_place.rs,Exit 0,miri-tests/pass/drop_in_place.rs
+tests/pass/union-overwrite.rs,Exit 0,miri-tests/pass/union-overwrite.rs
+tests/pass/backtrace/backtrace-api-v1.rs,Excluded,
+tests/pass/align_repeat_into_well_aligned_array.rs,Exit 0,miri-tests/pass/align_repeat_into_well_aligned_array.rs
+tests/pass/concurrency/address_reuse_happens_before.rs,Excluded,
+tests/pass/c-variadic.rs,Exit 0,miri-tests/pass/c-variadic.rs
+tests/pass/thread_local-panic.rs,Exit 0,miri-tests/pass/thread_local-panic.rs
+tests/pass/concurrency/sync.rs,Excluded,
+tests/pass/concurrency/miri_thread_join_spawned.rs,Excluded,
+tests/pass/static_memory_modification.rs,Exit 0,miri-tests/pass/static_memory_modification.rs
+tests/pass/align_strange_enum_discriminant_offset.rs,Exit 0,miri-tests/pass/align_strange_enum_discriminant_offset.rs
+tests/pass/concurrency/data_race.rs,Excluded,
+tests/pass/concurrency/spin_loops_nopreempt.rs,Excluded,
+tests/pass/extern_crate_std_in_main.rs,Exit 0,miri-tests/pass/extern_crate_std_in_main.rs
+tests/pass/concurrency/disable_data_race_detector.rs,Excluded,
+tests/pass/without-validation.rs,Exit 0,miri-tests/pass/without-validation.rs
+tests/pass/concurrency/sync_nopreempt.rs,Excluded,
+tests/pass/threadleak_ignored.rs,Exit 1,
+tests/pass/dst-irrefutable-bind.rs,Exit 0,miri-tests/pass/dst-irrefutable-bind.rs
+tests/pass/rust-lang-org.rs,Exit 0,miri-tests/pass/rust-lang-org.rs
+tests/pass/option_eq.rs,Exit 0,miri-tests/pass/option_eq.rs
+tests/pass/align.rs,Other UB,
+tests/pass/stacked_borrows/stack-printing.rs,Excluded,
+tests/pass/integer-ops.rs,Exit 1,
+tests/pass/adjacent-allocs.rs,Exit 0,miri-tests/pass/adjacent-allocs.rs
+tests/pass/heap_allocator.rs,Exit 0,miri-tests/pass/heap_allocator.rs
+tests/pass/iter_macro.rs,Exit 0,miri-tests/pass/iter_macro.rs
+tests/pass/box.rs,Exit 0,miri-tests/pass/box.rs
+tests/pass/try-operator-custom.rs,Exit 0,miri-tests/pass/try-operator-custom.rs
+tests/pass/write-bytes.rs,Exit 0,miri-tests/pass/write-bytes.rs
+tests/pass/align_repeat_into_packed_field.rs,Exit 0,miri-tests/pass/align_repeat_into_packed_field.rs
+tests/pass/zero-sized-accesses-and-offsets.rs,Exit 0,miri-tests/pass/zero-sized-accesses-and-offsets.rs
+tests/pass/closure-field-ty.rs,Exit 0,miri-tests/pass/closure-field-ty.rs
+tests/pass/function_calls/return_place_on_heap.rs,Exit 0,miri-tests/pass/function_calls/return_place_on_heap.rs
+tests/pass/backtrace/backtrace-global-alloc.rs,Exit 0,miri-tests/pass/backtrace/backtrace-global-alloc.rs
+tests/pass/function_calls/exported_symbol_weak.rs,Exit 0,miri-tests/pass/function_calls/exported_symbol_weak.rs
+tests/pass/move-arg-2-unique.rs,Exit 0,miri-tests/pass/move-arg-2-unique.rs
+tests/pass/function_calls/exported_symbol.rs,Exit 0,miri-tests/pass/function_calls/exported_symbol.rs
+tests/pass/overlapping_assignment_aggregate_scalar.rs,Exit 0,miri-tests/pass/overlapping_assignment_aggregate_scalar.rs
+tests/pass/concurrency/sync_singlethread.rs,Exit 0,miri-tests/pass/concurrency/sync_singlethread.rs
+tests/pass/function_calls/tail_call.rs,Exit 0,miri-tests/pass/function_calls/tail_call.rs
+tests/pass/shims/fs.rs,Excluded,
+tests/pass/backtrace/backtrace-std.rs,Exit 0,miri-tests/pass/backtrace/backtrace-std.rs
+tests/pass/concurrency/issue-miri-4655-mix-atomic-nonatomic.rs,Exit 0,miri-tests/pass/concurrency/issue-miri-4655-mix-atomic-nonatomic.rs
+tests/pass/function_calls/abi_compat.rs,Exit 0,miri-tests/pass/function_calls/abi_compat.rs
+tests/pass/shims/windows-threadname.rs,Excluded,
+tests/pass/shims/fs-symlink.rs,Excluded,
+tests/pass/concurrency/thread_park_isolated.rs,Exit 0,miri-tests/pass/concurrency/thread_park_isolated.rs
+tests/pass/concurrency/threadname.rs,Exit 0,miri-tests/pass/concurrency/threadname.rs
+tests/pass/concurrency/scope.rs,Exit 0,miri-tests/pass/concurrency/scope.rs
+tests/pass/shims/windows-rand.rs,Excluded,
+tests/pass/tree_borrows/cell-alternate-writes.rs,Excluded,
+tests/pass/concurrency/simple.rs,Exit 0,miri-tests/pass/concurrency/simple.rs
+tests/pass/tree_borrows/reborrow-is-read.rs,Excluded,
+tests/pass/tree_borrows/formatting.rs,Excluded,
+tests/pass/tree_borrows/reserved.rs,Excluded,
+tests/pass/stacked_borrows/coroutine-self-referential.rs,Exit 0,miri-tests/pass/stacked_borrows/coroutine-self-referential.rs
+tests/pass/tree_borrows/cell-inside-box.rs,Excluded,
+tests/pass/concurrency/issue-miri-1643.rs,Exit 0,miri-tests/pass/concurrency/issue-miri-1643.rs
+tests/pass/tree_borrows/spurious_read.rs,Excluded,
+tests/pass/tree_borrows/end-of-protector.rs,Excluded,
+tests/pass/concurrency/concurrent_caller_location.rs,Exit 0,miri-tests/pass/concurrency/concurrent_caller_location.rs
+tests/pass/tree_borrows/cell-inside-struct.rs,Excluded,
+tests/pass/concurrency/spin_loop.rs,Exit 0,miri-tests/pass/concurrency/spin_loop.rs
+tests/pass/tree_borrows/read_retag_no_race.rs,Excluded,
+tests/pass/panic/unwind_dwarf.rs,Excluded,
+tests/pass/concurrency/mutex_leak.rs,Exit 0,miri-tests/pass/concurrency/mutex_leak.rs
+tests/pass/concurrency/channels.rs,Exit 0,miri-tests/pass/concurrency/channels.rs
+tests/pass/stacked_borrows/zst-field-retagging-terminates.rs,Exit 0,miri-tests/pass/stacked_borrows/zst-field-retagging-terminates.rs
+tests/pass/panic/concurrent-panic.rs,Excluded,
+tests/pass/stacked_borrows/unknown-bottom-gc.rs,Exit 0,miri-tests/pass/stacked_borrows/unknown-bottom-gc.rs
+tests/pass/stacked_borrows/stacked-borrows.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/stacked-borrows.rs
+tests/pass/both_borrows/basic_aliasing_model.rs,Exit 0,miri-tests/pass/both_borrows/basic_aliasing_model.rs
+tests/pass/0weak_memory/weak.rs,Excluded,
+tests/pass/both_borrows/2phase.rs,Exit 0,miri-tests/pass/both_borrows/2phase.rs
+tests/pass/both_borrows/issue-miri-2389.rs,Exit 0,miri-tests/pass/both_borrows/issue-miri-2389.rs
+tests/pass/both_borrows/interior_mutability.rs,Exit 0,miri-tests/pass/both_borrows/interior_mutability.rs
+tests/pass/tls/win_tls_callback.rs,Excluded,
+tests/pass/both_borrows/unsafe_pinned.rs,Exit 0,miri-tests/pass/both_borrows/unsafe_pinned.rs
+tests/pass/both_borrows/maybe_dangling.rs,Exit 0,miri-tests/pass/both_borrows/maybe_dangling.rs
+tests/pass/tls/windows-tls.rs,Excluded,
+tests/pass/tls/macos_tlv_atexit.rs,Excluded,
+tests/pass/both_borrows/smallvec.rs,Exit 0,miri-tests/pass/both_borrows/smallvec.rs
+tests/pass/shims/ptr_mask.rs,Exit 0,miri-tests/pass/shims/ptr_mask.rs
+tests/pass/intrinsics/fmuladd_nondeterministic.rs,Excluded,
+tests/pass/shims/socket.rs,Exit 1,
+tests/pass/shims/pipe.rs,Exit 0,miri-tests/pass/shims/pipe.rs
+tests/pass/both_borrows/int-to-ptr.rs,Exit 0,miri-tests/pass/both_borrows/int-to-ptr.rs
+tests/pass/shims/sleep_long.rs,Exit 1,
+tests/pass/shims/ctor.rs,Exit 0,miri-tests/pass/shims/ctor.rs
+tests/pass/intrinsics/intrinsics.rs,Excluded,
+tests/pass/shims/fs-with-isolation.rs,Exit 1,
+tests/pass/shims/available-parallelism-miri-num-cpus.rs,Exit 1,
+tests/pass/shims/io.rs,Exit 0,miri-tests/pass/shims/io.rs
+tests/pass/shims/random.rs,Exit 0,miri-tests/pass/shims/random.rs
+tests/pass/tree_borrows/sb_fails.rs,Exit 0,miri-tests/pass/tree_borrows/sb_fails.rs
+tests/pass/shims/time.rs,Exit 1,
+tests/pass/shims/available-parallelism.rs,Exit 0,miri-tests/pass/shims/available-parallelism.rs
+tests/pass/shims/exit.rs,Exit 0,miri-tests/pass/shims/exit.rs
+tests/pass/tree_borrows/copy-nonoverlapping.rs,Exit 0,miri-tests/pass/tree_borrows/copy-nonoverlapping.rs
+tests/pass/tree_borrows/transmute-unsafecell.rs,Exit 0,miri-tests/pass/tree_borrows/transmute-unsafecell.rs
+tests/pass/tree_borrows/cell-lazy-write-to-surrounding.rs,Exit 0,miri-tests/pass/tree_borrows/cell-lazy-write-to-surrounding.rs
+tests/pass/tree_borrows/tree-borrows.rs,Exit 0,miri-tests/pass/tree_borrows/tree-borrows.rs
+tests/pass/panic/catch_panic.rs,Exit 0,miri-tests/pass/panic/catch_panic.rs
+tests/pass/panic/std-panic-locations.rs,Exit 0,miri-tests/pass/panic/std-panic-locations.rs
+tests/pass/panic/thread_panic.rs,Exit 0,miri-tests/pass/panic/thread_panic.rs
+tests/pass/0weak_memory/extra_cpp.rs,Exit 1,
+tests/pass/issues/issue-miri-3680.rs,Excluded,
+tests/pass/shims/time-with-isolation.rs,Exit 0,miri-tests/pass/shims/time-with-isolation.rs
+tests/pass/issues/issue-139553.rs,Excluded,
+tests/pass/tls/tls_leak_main_thread_allowed.rs,Exit 0,miri-tests/pass/tls/tls_leak_main_thread_allowed.rs
+tests/pass/tls/tls_macro_drop_single_thread.rs,Exit 0,miri-tests/pass/tls/tls_macro_drop_single_thread.rs
+tests/pass/intrinsics/select-unpredictable-drop.rs,Exit 0,miri-tests/pass/intrinsics/select-unpredictable-drop.rs
+tests/pass/tls/tls_static.rs,Exit 0,miri-tests/pass/tls/tls_static.rs
+tests/pass/intrinsics/integer.rs,Exit 0,miri-tests/pass/intrinsics/integer.rs
+tests/pass/panic/nested_panic_caught.rs,Exit 0,miri-tests/pass/panic/nested_panic_caught.rs
+tests/pass/issues/issue-3200-packed2-field-offset.rs,Exit 0,miri-tests/pass/issues/issue-3200-packed2-field-offset.rs
+tests/pass/intrinsics/volatile.rs,Exit 0,miri-tests/pass/intrinsics/volatile.rs
+tests/pass/intrinsics/type-id.rs,Exit 0,miri-tests/pass/intrinsics/type-id.rs
+tests/pass/issues/issue-miri-1909.rs,Exit 0,miri-tests/pass/issues/issue-miri-1909.rs
+tests/pass/intrinsics/portable-simd-ptrs.rs,Exit 0,miri-tests/pass/intrinsics/portable-simd-ptrs.rs
+tests/pass/issues/issue-73223.rs,Exit 0,miri-tests/pass/issues/issue-73223.rs
+tests/pass/intrinsics/portable-simd.rs,Exit 0,miri-tests/pass/intrinsics/portable-simd.rs
+tests/pass/issues/issue-3794.rs,Exit 0,miri-tests/pass/issues/issue-3794.rs
+tests/pass/intrinsics/simd-intrinsic-generic-elements.rs,Exit 0,miri-tests/pass/intrinsics/simd-intrinsic-generic-elements.rs
+tests/pass/issues/issue-120337-irrefutable-let-ice.rs,Other UB,
+tests/pass/issues/issue-27901.rs,Exit 0,miri-tests/pass/issues/issue-27901.rs
+tests/pass/tls/tls_macro_drop.rs,Exit 0,miri-tests/pass/tls/tls_macro_drop.rs
+tests/pass/issues/issue-miri-2123.rs,Exit 0,miri-tests/pass/issues/issue-miri-2123.rs
+tests/pass/tree_borrows/wildcard/formatting.rs,Excluded,
+tests/pass/issues/issue-miri-133.rs,Exit 0,miri-tests/pass/issues/issue-miri-133.rs
+tests/pass/issues/issue-miri-4793.rs,Exit 0,miri-tests/pass/issues/issue-miri-4793.rs
+tests/pass/issues/issue-35815.rs,Exit 0,miri-tests/pass/issues/issue-35815.rs
+tests/pass/issues/issue-134713-swap_nonoverlapping_untyped.rs,Exit 0,miri-tests/pass/issues/issue-134713-swap_nonoverlapping_untyped.rs
+tests/pass/issues/issue-miri-2068.rs,Exit 0,miri-tests/pass/issues/issue-miri-2068.rs
+tests/pass/issues/issue-miri-3473.rs,Exit 0,miri-tests/pass/issues/issue-miri-3473.rs
+tests/pass/issues/issue-36278-prefix-nesting.rs,Exit 0,miri-tests/pass/issues/issue-36278-prefix-nesting.rs
+tests/pass/issues/issue-31267-additional.rs,Exit 0,miri-tests/pass/issues/issue-31267-additional.rs
+tests/pass/issues/issue-miri-1075.rs,Exit 0,miri-tests/pass/issues/issue-miri-1075.rs
+tests/pass/shims/env/var.rs,Excluded,
+tests/pass/issues/issue-15080.rs,Exit 0,miri-tests/pass/issues/issue-15080.rs
+tests/pass/shims/aarch64/intrinsics-aarch64-neon.rs,Excluded,
+tests/pass/shims/aarch64/intrinsics-aarch64-crc32.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-avx512.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-pclmulqdq.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-sse3-ssse3.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-avx.rs,Excluded,
+tests/pass/shims/x86/intrinsics-sha.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-sse42.rs,Excluded,
+tests/pass/issues/issue-miri-4698-stashed-diagnostic.rs,Exit 0,miri-tests/pass/issues/issue-miri-4698-stashed-diagnostic.rs
+tests/pass/shims/x86/intrinsics-x86-vpclmulqdq.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-avx2.rs,Excluded,
+tests/pass/shims/x86/rounding-error.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-sse.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-bmi.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-sse41.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-sse2.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-gfni.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-adx.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-pause-without-sse2.rs,Excluded,
+tests/pass/shims/x86/intrinsics-x86-aes-vaes.rs,Excluded,
+tests/pass/issues/issue-91636.rs,Exit 0,miri-tests/pass/issues/issue-91636.rs
+tests/pass/issues/issue-34571.rs,Exit 0,miri-tests/pass/issues/issue-34571.rs
+tests/pass/issues/issue-94371.rs,Exit 0,miri-tests/pass/issues/issue-94371.rs
+tests/pass/issues/issue-17877.rs,Exit 0,miri-tests/pass/issues/issue-17877.rs
+tests/pass/issues/issue-15523-big.rs,Exit 0,miri-tests/pass/issues/issue-15523-big.rs
+tests/pass/issues/issue-26709.rs,Exit 0,miri-tests/pass/issues/issue-26709.rs
+tests/pass/issues/issue-30530.rs,Exit 0,miri-tests/pass/issues/issue-30530.rs
+tests/pass/issues/issue-20575.rs,Exit 0,miri-tests/pass/issues/issue-20575.rs
+tests/pass/issues/issue-miri-3541-dyn-vtable-trait-normalization.rs,Exit 0,miri-tests/pass/issues/issue-miri-3541-dyn-vtable-trait-normalization.rs
+tests/pass/issues/issue-15063.rs,Exit 0,miri-tests/pass/issues/issue-15063.rs
+tests/pass/issues/issue-23261.rs,Exit 0,miri-tests/pass/issues/issue-23261.rs
+tests/pass/shims/env/current_dir.rs,Exit 1,
+tests/pass/issues/issue-miri-3282-struct-tail-normalize.rs,Exit 0,miri-tests/pass/issues/issue-miri-3282-struct-tail-normalize.rs
+tests/pass/tree_borrows/wildcard/wildcard.rs,Exit 0,miri-tests/pass/tree_borrows/wildcard/wildcard.rs
+tests/pass/tree_borrows/wildcard/undetected_ub.rs,Exit 0,miri-tests/pass/tree_borrows/wildcard/undetected_ub.rs
+tests/pass/shims/env/current_dir_with_isolation.rs,Exit 1,
+tests/pass/issues/issue-5917.rs,Exit 0,miri-tests/pass/issues/issue-5917.rs
+tests/pass/issues/issue-33387.rs,Exit 0,miri-tests/pass/issues/issue-33387.rs
+tests/pass/issues/issue-miri-184.rs,Exit 0,miri-tests/pass/issues/issue-miri-184.rs
+tests/pass/issues/issue-3200-packed-field-offset.rs,Exit 0,miri-tests/pass/issues/issue-3200-packed-field-offset.rs
+tests/pass/tree_borrows/wildcard/reborrow.rs,Exit 0,miri-tests/pass/tree_borrows/wildcard/reborrow.rs
+tests/pass/issues/issue-29746.rs,Exit 0,miri-tests/pass/issues/issue-29746.rs
+tests/pass/shims/env/var-forward.rs,Exit 1,
+tests/pass/shims/env/current_exe.rs,Exit 1,
+tests/pass/shims/env/args.rs,Exit 0,miri-tests/pass/shims/env/args.rs
+tests/pass/shims/env/var-without-isolation.rs,Exit 1,
+tests/pass/shims/env/home.rs,Exit 1,
+tests/pass/shims/x86/intrinsics-x86.rs,Exit 0,miri-tests/pass/shims/x86/intrinsics-x86.rs
+tests/pass/shims/env/var-set.rs,Exit 1,
+tests/pass/0weak_memory/consistency.rs,Exit 1,
+tests/pass/0weak_memory/consistency_sc.rs,Exit 1,
+tests/fail/extern_static_wrong_size.rs,Excluded,
+tests/fail/c-variadic-mismatch-count.rs,Other UB,
+tests/fail/intrinsic_fallback_is_spec.rs,Exit 1,
+tests/fail/erroneous_const2.rs,Exit 1,
+tests/fail/async-shared-mutable.rs,Aliasing UB,miri-tests/fail/aliasing/async-shared-mutable.rs
+tests/fail/branchless-select-i128-pointer.rs,Other UB,
+tests/fail/breakpoint.rs,Exit 1,
+tests/fail/enum-untagged-variant-invalid-encoding.rs,Other UB,
+tests/fail/rustc-error.rs,Exit 1,
+tests/fail/erroneous_const.rs,Exit 1,
+tests/fail/static_memory_modification3.rs,Other UB,
+tests/fail/deny_lint.rs,Exit 1,
+tests/fail/box-cell-alias.rs,Aliasing UB,miri-tests/fail/aliasing/box-cell-alias.rs
+tests/fail/never_transmute_humans.rs,Other UB,
+tests/fail/extern_static.rs,Exit 1,
+tests/fail/type-too-large.rs,Exit 1,
+tests/fail/ptr_swap_nonoverlapping.rs,Exit 1,
+tests/fail/memleak_no_backtrace.rs,Exit 1,
+tests/fail/memleak.rs,Exit 1,
+tests/fail/extern-type-field-offset.rs,Exit 1,
+tests/fail/issue-miri-1112.rs,Other UB,
+tests/fail/dyn-upcast-nop-wrong-trait.rs,Other UB,
+tests/fail/unreachable.rs,Other UB,
+tests/fail/modifying_constants.rs,Other UB,
+tests/fail/miri_start_wrong_sig.rs,Excluded,
+tests/fail/zst_local_oob.rs,Baseline UB,miri-tests/fail/baseline/zst_local_oob.rs
+tests/fail/no_main.rs,Exit 1,
+tests/fail/tls_static_leak.rs,Exit 1,
+tests/fail/overlapping_assignment.rs,Other UB,
+tests/fail/tls_macro_leak.rs,Exit 1,
+tests/fail/overlapping_assignment_aggregate.rs,Other UB,
+tests/fail/memleak_rc.rs,Exit 1,
+tests/fail/unwind-action-terminate.rs,Exit 1,
+tests/fail/terminate-terminator.rs,Exit 1,
+tests/fail/never_transmute_void.rs,Other UB,
+tests/fail/function_calls/target_feature.rs,Excluded,
+tests/fail/dyn-call-trait-mismatch.rs,Other UB,
+tests/fail/issue-miri-3288-ice-symbolic-alignment-extern-static.rs,Exit 1,
+tests/fail/reading_half_a_pointer.rs,Baseline UB,miri-tests/fail/baseline/reading_half_a_pointer.rs
+tests/fail/dyn-upcast-trait-mismatch.rs,Other UB,
+tests/fail/layout_cycle.rs,Exit 1,
+tests/fail/static_memory_modification2.rs,Other UB,
+tests/fail/read_from_trivial_switch.rs,Other UB,
+tests/fail/function_calls/simd_feature_flag_difference.rs,Excluded,
+tests/fail/function_calls/target_feature_wasm.rs,Excluded,
+tests/fail/never_match_never.rs,Other UB,
+tests/fail/static_memory_modification1.rs,Other UB,
+tests/fail/environ-gets-deallocated.rs,Baseline UB,miri-tests/fail/baseline/environ-gets-deallocated.rs
+tests/fail/storage-live-dead-var.rs,Other UB,
+tests/fail/enum-set-discriminant-niche-variant-wrong.rs,Other UB,
+tests/fail/c-variadic-mismatch.rs,Other UB,
+tests/fail/rustc-error2.rs,Exit 1,
+tests/fail/unaligned_pointers/promise_alignment.rs,Excluded,
+tests/fail/never_say_never.rs,Other UB,
+tests/fail/extern_static_in_const.rs,Exit 1,
+tests/fail/rc_as_ptr.rs,Other UB,
+tests/fail/c-variadic.rs,Other UB,
+tests/fail/unaligned_pointers/promise_alignment_zero.rs,Excluded,
+tests/fail/const-ub-checks.rs,Exit 1,
+tests/fail/storage-live-resets-var.rs,Other UB,
+tests/fail/function_calls/exported_symbol_bad_unwind1.rs,Other UB,
+tests/fail/unsupported_foreign_function.rs,Exit 1,
+tests/fail/coroutine-pinned-moved.rs,Other UB,
+tests/fail/function_calls/check_arg_abi.rs,Other UB,
+tests/fail/function_calls/exported_symbol_wrong_type.rs,Other UB,
+tests/fail/function_calls/arg_inplace_locals_alias_ret.rs,Aliasing UB,miri-tests/fail/aliasing/function_calls/arg_inplace_locals_alias_ret.rs
+tests/fail/function_calls/arg_inplace_mutate.rs,Aliasing UB,miri-tests/fail/aliasing/function_calls/arg_inplace_mutate.rs
+tests/fail/function_calls/arg_inplace_locals_alias.rs,Aliasing UB,miri-tests/fail/aliasing/function_calls/arg_inplace_locals_alias.rs
+tests/fail/function_calls/return_pointer_aliasing_read.rs,Aliasing UB,miri-tests/fail/aliasing/function_calls/return_pointer_aliasing_read.rs
+tests/fail/function_calls/return_pointer_aliasing_write.rs,Aliasing UB,miri-tests/fail/aliasing/function_calls/return_pointer_aliasing_write.rs
+tests/fail/function_calls/check_callback_abi.rs,Other UB,
+tests/fail/function_calls/exported_symbol_clashing.rs,Exit 1,
+tests/fail/function_calls/check_arg_count_abort.rs,Other UB,
+tests/fail/function_calls/return_pointer_aliasing_write_tail_call.rs,Aliasing UB,miri-tests/fail/aliasing/function_calls/return_pointer_aliasing_write_tail_call.rs
+tests/fail/function_calls/exported_symbol_abi_mismatch.rs,Other UB,
+tests/fail/function_calls/exported_symbol_bad_unwind2.rs,Exit 1,
+tests/fail/function_calls/arg_inplace_observe_during.rs,Aliasing UB,miri-tests/fail/aliasing/function_calls/arg_inplace_observe_during.rs
+tests/fail/function_calls/arg_inplace_observe_after.rs,Other UB,
+tests/fail/function_calls/exported_symbol_wrong_arguments.rs,Other UB,
+tests/fail/function_calls/return_pointer_on_unwind.rs,Other UB,
+tests/fail/function_calls/exported_symbol_shim_clashing.rs,Exit 1,
+tests/fail/unaligned_pointers/field_requires_parent_struct_alignment2.rs,Other UB,
+tests/fail/function_calls/check_arg_count_too_few_args.rs,Other UB,
+tests/fail/unaligned_pointers/unaligned_ref_addr_of.rs,Other UB,
+tests/fail/function_calls/check_arg_count_too_many_args.rs,Other UB,
+tests/fail/unaligned_pointers/unaligned_ptr2.rs,Other UB,
+tests/fail/unaligned_pointers/unaligned_ptr1.rs,Other UB,
+tests/fail/unaligned_pointers/reference_to_packed.rs,Other UB,
+tests/fail/unaligned_pointers/atomic_unaligned.rs,Other UB,
+tests/fail/unaligned_pointers/dyn_alignment.rs,Other UB,
+tests/fail/unaligned_pointers/drop_in_place.rs,Other UB,
+tests/fail/unaligned_pointers/unaligned_ptr4.rs,Other UB,
+tests/fail/unaligned_pointers/unaligned_ptr_zst.rs,Other UB,
+tests/fail/unaligned_pointers/maybe_dangling_unalighed.rs,Other UB,
+tests/fail/unaligned_pointers/alignment.rs,Other UB,
+tests/fail/unaligned_pointers/intptrcast_alignment_check.rs,Other UB,
+tests/fail/unaligned_pointers/unaligned_ptr3.rs,Other UB,
+tests/fail/concurrency/read_only_atomic_cmpxchg.rs,Other UB,
+tests/fail/concurrency/read_only_atomic_load_acquire.rs,Other UB,
+tests/fail/unaligned_pointers/field_requires_parent_struct_alignment.rs,Other UB,
+tests/fail/concurrency/mutex-leak-move-deadlock.rs,Exit 1,
+tests/fail/concurrency/read_only_atomic_load_large.rs,Exit 0,miri-tests/pass/concurrency/read_only_atomic_load_large.rs
+tests/fail/validity/maybe_dangling_null.rs,Other UB,
+tests/fail/validity/too-big-unsized.rs,Other UB,
+tests/fail/validity/invalid_bool_op.rs,Other UB,
+tests/fail/validity/recursive-validity-ref-bool.rs,Other UB,
+tests/fail/validity/wrong-dyn-trait-generic.rs,Other UB,
+tests/fail/validity/wrong-dyn-trait.rs,Other UB,
+tests/fail/validity/nonzero.rs,Other UB,
+tests/fail/validity/cast_fn_ptr_invalid_caller_arg.rs,Other UB,
+tests/fail/validity/invalid_char_match.rs,Other UB,
+tests/fail/validity/invalid_enum_op_discr_uninhabited.rs,Other UB,
+tests/fail/validity/invalid_fnptr_uninit.rs,Other UB,
+tests/fail/validity/invalid_enum_op.rs,Other UB,
+tests/fail/validity/invalid_char_op.rs,Other UB,
+tests/fail/validity/uninhabited_variant.rs,Other UB,
+tests/fail/validity/cast_fn_ptr_invalid_caller_ret.rs,Other UB,
+tests/fail/validity/dangling_ref3.rs,Other UB,
+tests/fail/validity/dangling_ref1.rs,Other UB,
+tests/fail/validity/box-custom-alloc-invalid-alloc.rs,Other UB,
+tests/fail/validity/invalid_fnptr_null.rs,Other UB,
+tests/fail/validity/wrong-dyn-trait-assoc-type.rs,Other UB,
+tests/fail/validity/uninit_integer.rs,Other UB,
+tests/fail/validity/invalid_bool.rs,Other UB,
+tests/fail/validity/invalid_int_op.rs,Other UB,
+tests/fail/validity/invalid_enum_op_niche_out_of_range.rs,Other UB,
+tests/fail/validity/invalid_char_uninit.rs,Other UB,
+tests/fail/validity/invalid_enum_cast.rs,Other UB,
+tests/fail/validity/invalid_char.rs,Other UB,
+tests/fail/validity/recursive-validity-box-bool.rs,Other UB,
+tests/fail/validity/invalid_enum_tag.rs,Other UB,
+tests/fail/validity/match_binder_checks_validity1.rs,Other UB,
+tests/fail/validity/ref_to_uninhabited2.rs,Other UB,
+tests/fail/validity/too-big-slice.rs,Other UB,
+tests/fail/validity/invalid_wide_raw.rs,Other UB,
+tests/fail/validity/dangling_ref2.rs,Other UB,
+tests/fail/validity/match_binder_checks_validity2.rs,Other UB,
+tests/fail/validity/cast_fn_ptr_invalid_callee_ret.rs,Other UB,
+tests/fail/validity/box-custom-alloc-dangling-ptr.rs,Other UB,
+tests/fail/validity/uninit_raw_ptr.rs,Other UB,
+tests/fail/validity/invalid_bool_uninit.rs,Other UB,
+tests/fail/validity/transmute_through_ptr.rs,Other UB,
+tests/fail/dangling_pointers/out_of_bounds_read.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/out_of_bounds_read.rs
+tests/fail/dangling_pointers/deref_dangling_box.rs,Other UB,
+tests/fail/validity/cast_fn_ptr_invalid_callee_arg.rs,Other UB,
+tests/fail/validity/ref_to_uninhabited1.rs,Other UB,
+tests/fail/dangling_pointers/dangling_primitive.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/dangling_primitive.rs
+tests/fail/validity/invalid_char_cast.rs,Other UB,
+tests/fail/dangling_pointers/dangling_pointer_offset.rs,Other UB,
+tests/fail/dangling_pointers/dangling_pointer_project_underscore_match.rs,Other UB,
+tests/fail/dangling_pointers/deref-invalid-ptr.rs,Other UB,
+tests/fail/validity/uninit_float.rs,Other UB,
+tests/fail/validity/dyn-transmute-inner-binder.rs,Other UB,
+tests/fail/dangling_pointers/null_pointer_write.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/null_pointer_write.rs
+tests/fail/dangling_pointers/out_of_bounds_read_neg_offset.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/out_of_bounds_read_neg_offset.rs
+tests/fail/dangling_pointers/storage_dead_dangling.rs,Other UB,
+tests/fail/dangling_pointers/dangling_pointer_to_raw_pointer.rs,Other UB,
+tests/fail/dangling_pointers/deref_dangling_ref.rs,Other UB,
+tests/fail/dangling_pointers/dangling_pointer_project_underscore_let_type_annotation.rs,Other UB,
+tests/fail/dangling_pointers/stack_temporary.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/stack_temporary.rs
+tests/fail/dangling_pointers/null_pointer_deref.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/null_pointer_deref.rs
+tests/fail/dangling_pointers/wild_pointer_deref.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/wild_pointer_deref.rs
+tests/fail/dangling_pointers/dangling_pointer_project_underscore_let.rs,Other UB,
+tests/fail/dangling_pointers/dangling_pointer_deref.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/dangling_pointer_deref.rs
+tests/fail/dangling_pointers/out_of_bounds_write.rs,Baseline UB,miri-tests/fail/baseline/dangling_pointers/out_of_bounds_write.rs
+tests/fail/dangling_pointers/out_of_bounds_project.rs,Other UB,
+tests/fail/dangling_pointers/dyn_size.rs,Other UB,
+tests/fail/dangling_pointers/dangling_pointer_deref_match_never.rs,Other UB,
+tests/fail/provenance/ptr_int_unexposed.rs,Baseline UB,miri-tests/fail/baseline/provenance/ptr_int_unexposed.rs
+tests/fail/weak_memory/weak_uninit.rs,Other UB,
+tests/fail/provenance/int_copy_looses_provenance3.rs,Baseline UB,miri-tests/fail/baseline/provenance/int_copy_looses_provenance3.rs
+tests/fail/provenance/mix-ptrs2.rs,Other UB,
+tests/fail/provenance/ptr_copy_loses_partial_provenance0.rs,Baseline UB,miri-tests/fail/baseline/provenance/ptr_copy_loses_partial_provenance0.rs
+tests/fail/provenance/provenance_transmute.rs,Baseline UB,miri-tests/fail/baseline/provenance/provenance_transmute.rs
+tests/fail/provenance/int_copy_looses_provenance0.rs,Other UB,
+tests/fail/provenance/ptr_copy_loses_partial_provenance1.rs,Baseline UB,miri-tests/fail/baseline/provenance/ptr_copy_loses_partial_provenance1.rs
+tests/fail/provenance/int_copy_looses_provenance2.rs,Other UB,
+tests/fail/provenance/strict_provenance_cast.rs,Exit 0,miri-tests/pass/provenance/strict_provenance_cast.rs
+tests/fail/stacked_borrows/load_invalid_mut.rs,Exit 0,miri-tests/pass/stacked_borrows/load_invalid_mut.rs
+tests/fail/provenance/pointer_partial_overwrite.rs,Baseline UB,miri-tests/fail/baseline/provenance/pointer_partial_overwrite.rs
+tests/fail/provenance/mix-ptrs1.rs,Other UB,
+tests/fail/stacked_borrows/illegal_read5.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_read5.rs
+tests/fail/stacked_borrows/unescaped_local.rs,Exit 0,miri-tests/pass/stacked_borrows/unescaped_local.rs
+tests/fail/stacked_borrows/unescaped_static.rs,Exit 0,miri-tests/pass/stacked_borrows/unescaped_static.rs
+tests/fail/stacked_borrows/shared_rw_borrows_are_weak1.rs,Exit 0,miri-tests/pass/stacked_borrows/shared_rw_borrows_are_weak1.rs
+tests/fail/stacked_borrows/illegal_read3.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_read3.rs
+tests/fail/provenance/ptr_invalid.rs,Baseline UB,miri-tests/fail/baseline/provenance/ptr_invalid.rs
+tests/fail/stacked_borrows/retag_data_race_protected_read.rs,Excluded,
+tests/fail/provenance/int_copy_looses_provenance1.rs,Other UB,
+tests/fail/stacked_borrows/fnentry_invalidation.rs,Exit 0,miri-tests/pass/stacked_borrows/fnentry_invalidation.rs
+tests/fail/stacked_borrows/retag_data_race_read.rs,Excluded,
+tests/fail/stacked_borrows/pass_invalid_mut.rs,Exit 0,miri-tests/pass/stacked_borrows/pass_invalid_mut.rs
+tests/fail/provenance/ptr_invalid_offset.rs,Other UB,
+tests/fail/stacked_borrows/interior_mut2.rs,Exit 0,miri-tests/pass/stacked_borrows/interior_mut2.rs
+tests/fail/stacked_borrows/illegal_read7.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_read7.rs
+tests/fail/stacked_borrows/invalidate_against_protector1.rs,Exit 0,miri-tests/pass/stacked_borrows/invalidate_against_protector1.rs
+tests/fail/stacked_borrows/illegal_write4.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_write4.rs
+tests/fail/stacked_borrows/fnentry_invalidation2.rs,Exit 0,miri-tests/pass/stacked_borrows/fnentry_invalidation2.rs
+tests/fail/stacked_borrows/return_invalid_mut.rs,Exit 0,miri-tests/pass/stacked_borrows/return_invalid_mut.rs
+tests/fail/stacked_borrows/illegal_read2.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_read2.rs
+tests/fail/stacked_borrows/illegal_write3.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/illegal_write3.rs
+tests/fail/stacked_borrows/disable_mut_does_not_merge_srw.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/disable_mut_does_not_merge_srw.rs
+tests/fail/stacked_borrows/return_invalid_mut_tuple.rs,Exit 0,miri-tests/pass/stacked_borrows/return_invalid_mut_tuple.rs
+tests/fail/stacked_borrows/deallocate_against_protector1.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/deallocate_against_protector1.rs
+tests/fail/stacked_borrows/return_invalid_mut_option.rs,Exit 0,miri-tests/pass/stacked_borrows/return_invalid_mut_option.rs
+tests/fail/data_race/release_seq_race.rs,Excluded,
+tests/fail/data_race/dealloc_write_race_stack.rs,Excluded,
+tests/fail/data_race/alloc_write_race.rs,Excluded,
+tests/fail/data_race/mixed_size_read_write_read.rs,Excluded,
+tests/fail/data_race/atomic_write_na_write_race2.rs,Excluded,
+tests/fail/data_race/local_variable_write_race.rs,Excluded,
+tests/fail/data_race/mixed_size_write_write.rs,Excluded,
+tests/fail/data_race/dealloc_read_race2.rs,Excluded,
+tests/fail/data_race/enable_after_join_to_main.rs,Excluded,
+tests/fail/data_race/atomic_write_na_write_race1.rs,Excluded,
+tests/fail/data_race/atomic_read_na_write_race2.rs,Excluded,
+tests/fail/data_race/fence_after_load.rs,Excluded,
+tests/fail/data_race/dangling_thread_async_race.rs,Excluded,
+tests/fail/data_race/dealloc_write_race2.rs,Excluded,
+tests/fail/data_race/release_seq_race_same_thread.rs,Excluded,
+tests/fail/data_race/atomic_write_na_read_race2.rs,Excluded,
+tests/fail/data_race/relax_acquire_race.rs,Excluded,
+tests/fail/data_race/mixed_size_read_write.rs,Excluded,
+tests/fail/data_race/atomic_write_na_read_race1.rs,Excluded,
+tests/fail/data_race/read_write_race_stack.rs,Excluded,
+tests/fail/data_race/dealloc_write_race1.rs,Excluded,
+tests/fail/data_race/alloc_read_race.rs,Excluded,
+tests/fail/data_race/mixed_size_read_read_write.rs,Excluded,
+tests/fail/data_race/dealloc_read_race1.rs,Excluded,
+tests/fail/data_race/local_variable_read_race.rs,Excluded,
+tests/fail/data_race/local_variable_alloc_race.rs,Excluded,
+tests/fail/data_race/write_write_race_stack.rs,Excluded,
+tests/fail/data_race/atomic_read_na_write_race1.rs,Excluded,
+tests/fail/data_race/write_write_race.rs,Excluded,
+tests/fail/data_race/dangling_thread_race.rs,Excluded,
+tests/fail/data_race/rmw_race.rs,Excluded,
+tests/fail/data_race/stack_pop_race.rs,Excluded,
+tests/fail/data_race/dealloc_read_race_stack.rs,Excluded,
+tests/fail/data_race/read_write_race.rs,Excluded,
+tests/fail/stacked_borrows/raw_tracking.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/raw_tracking.rs
+tests/fail/stacked_borrows/pointer_smuggling.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/pointer_smuggling.rs
+tests/fail/stacked_borrows/transmute-is-no-escape.rs,Exit 0,miri-tests/pass/stacked_borrows/transmute-is-no-escape.rs
+tests/fail/stacked_borrows/interior_mut1.rs,Exit 0,miri-tests/pass/stacked_borrows/interior_mut1.rs
+tests/fail/stacked_borrows/illegal_read4.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_read4.rs
+tests/fail/stacked_borrows/zst_slice.rs,Exit 0,miri-tests/pass/stacked_borrows/zst_slice.rs
+tests/fail/stacked_borrows/exposed_only_ro.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/exposed_only_ro.rs
+tests/fail/stacked_borrows/illegal_dealloc1.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/illegal_dealloc1.rs
+tests/fail/stacked_borrows/illegal_read1.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_read1.rs
+tests/fail/function_pointers/abi_mismatch_repr_C.rs,Other UB,
+tests/fail/stacked_borrows/track_caller.rs,Exit 0,miri-tests/pass/stacked_borrows/track_caller.rs
+tests/fail/stacked_borrows/illegal_write2.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_write2.rs
+tests/fail/stacked_borrows/illegal_read6.rs,Exit 0,miri-tests/pass/stacked_borrows/illegal_read6.rs
+tests/fail/stacked_borrows/illegal_read8.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/illegal_read8.rs
+tests/fail/stacked_borrows/drop_in_place_protector.rs,Exit 0,miri-tests/pass/stacked_borrows/drop_in_place_protector.rs
+tests/fail/function_pointers/cast_box_int_to_fn_ptr.rs,Other UB,
+tests/fail/stacked_borrows/shared_rw_borrows_are_weak2.rs,Aliasing UB,miri-tests/fail/aliasing/stacked_borrows/shared_rw_borrows_are_weak2.rs
+tests/fail/stacked_borrows/drop_in_place_retag.rs,Exit 0,miri-tests/pass/stacked_borrows/drop_in_place_retag.rs
+tests/fail/function_pointers/abi_mismatch_too_few_args.rs,Other UB,
+tests/fail/stacked_borrows/static_memory_modification.rs,Exit 0,miri-tests/pass/stacked_borrows/static_memory_modification.rs
+tests/fail/function_pointers/fn_ptr_offset.rs,Other UB,
+tests/fail/function_pointers/abi_mismatch_array_vs_struct.rs,Other UB,
+tests/fail/function_pointers/execute_memory.rs,Other UB,
+tests/fail/function_pointers/abi_mismatch_int_vs_float.rs,Other UB,
+tests/fail/function_pointers/abi_mismatch_raw_pointer.rs,Other UB,
+tests/fail/function_pointers/abi_mismatch_simple.rs,Other UB,
+tests/fail/function_pointers/abi_mismatch_vector.rs,Other UB,
+tests/fail/function_pointers/deref_fn_ptr.rs,Other UB,
+tests/fail/function_pointers/abi_mismatch_too_many_args.rs,Other UB,
+tests/fail/function_pointers/abi_mismatch_return_type.rs,Other UB,
+tests/fail/both_borrows/retag_data_race_write.rs,Excluded,
+tests/fail/both_borrows/illegal_write5.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/illegal_write5.rs
+tests/fail/both_borrows/mut_exclusive_violation2.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/mut_exclusive_violation2.rs
+tests/fail/both_borrows/illegal_write1.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/illegal_write1.rs
+tests/fail/both_borrows/invalidate_against_protector2.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/invalidate_against_protector2.rs
+tests/fail/function_pointers/cast_int_to_fn_ptr.rs,Other UB,
+tests/fail/shims/macos_tlv_atexit_wrong_abi.rs,Excluded,
+tests/fail/both_borrows/pass_invalid_shr_tuple.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/pass_invalid_shr_tuple.rs
+tests/fail/both_borrows/box_exclusive_violation1.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/box_exclusive_violation1.rs
+tests/fail/both_borrows/aliasing_mut1.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/aliasing_mut1.rs
+tests/fail/both_borrows/aliasing_mut2.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/aliasing_mut2.rs
+tests/fail/both_borrows/buggy_split_at_mut.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/buggy_split_at_mut.rs
+tests/fail/both_borrows/newtype_pair_retagging.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/newtype_pair_retagging.rs
+tests/fail/both_borrows/shr_frozen_violation2.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/shr_frozen_violation2.rs
+tests/fail/both_borrows/return_invalid_shr_tuple.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/return_invalid_shr_tuple.rs
+tests/fail/both_borrows/pass_invalid_shr.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/pass_invalid_shr.rs
+tests/fail/both_borrows/outdated_local.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/outdated_local.rs
+tests/fail/both_borrows/illegal_read_despite_exposed1.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/illegal_read_despite_exposed1.rs
+tests/fail/both_borrows/aliasing_mut3.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/aliasing_mut3.rs
+tests/fail/both_borrows/shr_frozen_violation1.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/shr_frozen_violation1.rs
+tests/fail/both_borrows/newtype_retagging.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/newtype_retagging.rs
+tests/fail/both_borrows/invalidate_against_protector3.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/invalidate_against_protector3.rs
+tests/fail/tree_borrows/spurious_read.rs,Excluded,
+tests/fail/both_borrows/issue-miri-1050-1.rs,Other UB,
+tests/fail/tree_borrows/cell-inside-struct.rs,Excluded,
+tests/fail/both_borrows/load_invalid_shr.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/load_invalid_shr.rs
+tests/fail/both_borrows/return_invalid_shr_option.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/return_invalid_shr_option.rs
+tests/fail/tree_borrows/reservedim_spurious_write.rs,Excluded,
+tests/fail/both_borrows/pass_invalid_shr_option.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/pass_invalid_shr_option.rs
+tests/fail/both_borrows/buggy_as_mut_slice.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/buggy_as_mut_slice.rs
+tests/fail/both_borrows/aliasing_mut4.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/aliasing_mut4.rs
+tests/fail/both_borrows/box_noalias_violation.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/box_noalias_violation.rs
+tests/fail/both_borrows/alias_through_mutation.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/alias_through_mutation.rs
+tests/fail/both_borrows/return_invalid_shr.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/return_invalid_shr.rs
+tests/fail/both_borrows/mut_exclusive_violation1.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/mut_exclusive_violation1.rs
+tests/fail/panic/no_std.rs,Excluded,
+tests/fail/both_borrows/illegal_write6.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/illegal_write6.rs
+tests/fail/both_borrows/illegal_write_despite_exposed1.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/illegal_write_despite_exposed1.rs
+tests/fail/both_borrows/issue-miri-1050-2.rs,Other UB,
+tests/fail/both_borrows/illegal_read_despite_exposed2.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/illegal_read_despite_exposed2.rs
+tests/fail/shims/return_type_mismatch.rs,Exit 1,
+tests/fail/panic/unwind_panic_abort.rs,Excluded,
+tests/fail/shims/shim_arg_size.rs,Other UB,
+tests/fail/both_borrows/mixed_cell_deallocate.rs,Aliasing UB,miri-tests/fail/aliasing/both_borrows/mixed_cell_deallocate.rs
+tests/fail/shims/vararg_caller_signature_mismatch.rs,Other UB,
+tests/fail/shims/ctor_ub.rs,Other UB,
+tests/fail/shims/wrong_fixed_arg_count.rs,Other UB,
+tests/fail/shims/non_vararg_signature_mismatch.rs,Other UB,
+tests/fail/tree_borrows/pass_invalid_mut.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/pass_invalid_mut.rs
+tests/fail/shims/ctor_wrong_ret_type.rs,Other UB,
+tests/fail/shims/isolated_stdin.rs,Exit 1,
+tests/fail/tree_borrows/alternate-read-write.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/alternate-read-write.rs
+tests/fail/alloc/alloc_error_handler_custom.rs,Excluded,
+tests/fail/alloc/no_global_allocator.rs,Excluded,
+tests/fail/tree_borrows/subtree_traversal_skipping_diagnostics.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/subtree_traversal_skipping_diagnostics.rs
+tests/fail/alloc/alloc_error_handler_no_std.rs,Excluded,
+tests/fail/tree_borrows/frozen-lazy-write-to-surrounding.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/frozen-lazy-write-to-surrounding.rs
+tests/fail/shims/input_arg_mismatch.rs,Exit 1,
+tests/fail/tree_borrows/strongly-protected.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/strongly-protected.rs
+tests/fail/tree_borrows/fnentry_invalidation.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/fnentry_invalidation.rs
+tests/fail/tree_borrows/outside-range.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/outside-range.rs
+tests/fail/tree_borrows/parent_read_freezes_raw_mut.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/parent_read_freezes_raw_mut.rs
+tests/fail/tree_borrows/write-during-2phase.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/write-during-2phase.rs
+tests/fail/tree_borrows/return_invalid_mut.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/return_invalid_mut.rs
+tests/fail/tree_borrows/repeated_foreign_read_lazy_conflicted.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/repeated_foreign_read_lazy_conflicted.rs
+tests/fail/tree_borrows/protector-write-lazy.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/protector-write-lazy.rs
+tests/fail/tree_borrows/error-range.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/error-range.rs
+tests/fail/panic/tls_macro_const_drop_panic.rs,Exit 1,
+tests/fail/panic/panic_abort2.rs,Exit 1,
+tests/fail/panic/tls_macro_drop_panic.rs,Exit 1,
+tests/fail/panic/panic_abort4.rs,Exit 1,
+tests/fail/panic/panic_abort1.rs,Exit 1,
+tests/fail/panic/bad_unwind.rs,Other UB,
+tests/fail/alloc/deallocate-twice.rs,Baseline UB,miri-tests/fail/baseline/alloc/deallocate-twice.rs
+tests/fail/alloc/unsupported_non_power_two_alignment.rs,Other UB,
+tests/fail/panic/panic_abort3.rs,Exit 1,
+tests/fail/alloc/unsupported_big_alignment.rs,Exit 1,
+tests/fail/alloc/too_large.rs,Other UB,
+tests/fail/alloc/reallocate-dangling.rs,Baseline UB,miri-tests/fail/baseline/alloc/reallocate-dangling.rs
+tests/fail/alloc/reallocate-bad-size.rs,Other UB,
+tests/fail/alloc/deallocate-bad-alignment.rs,Other UB,
+tests/fail/alloc/reallocate-change-alloc.rs,Baseline UB,miri-tests/fail/baseline/alloc/reallocate-change-alloc.rs
+tests/fail/alloc/deallocate-bad-size.rs,Other UB,
+tests/fail/match/single_variant_uninit.rs,Other UB,
+tests/fail/alloc/global_system_mixup.rs,Other UB,
+tests/fail/match/single_variant.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_int_plus_ptr.rs,Other UB,
+tests/fail/intrinsics/write_bytes_overflow.rs,Other UB,
+tests/fail/alloc/alloc_error_handler.rs,Exit 1,
+tests/fail/match/all_variants_uninhabited.rs,Other UB,
+tests/fail/match/only_inhabited_variant.rs,Other UB,
+tests/fail/alloc/stack_free.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_from_unsigned_neg.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_small3.rs,Other UB,
+tests/fail/tls/tls_static_dealloc.rs,Baseline UB,miri-tests/fail/baseline/tls/tls_static_dealloc.rs
+tests/fail/intrinsics/float_to_int_64_too_big2.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_nan.rs,Other UB,
+tests/fail/intrinsics/fast_math_result.rs,Other UB,
+tests/fail/intrinsics/unchecked_sub2.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_big6.rs,Other UB,
+tests/fail/panic/double_panic.rs,Exit 1,
+tests/fail/panic/abort_unwind.rs,Exit 1,
+tests/fail/intrinsics/fast_math_first.rs,Other UB,
+tests/fail/intrinsics/unchecked_mul1.rs,Other UB,
+tests/fail/intrinsics/ptr_metadata_uninit_slice_data.rs,Other UB,
+tests/fail/intrinsics/fast_math_both.rs,Other UB,
+tests/fail/intrinsics/funnel_shl.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_neg.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_from_different_allocs.rs,Other UB,
+tests/fail/intrinsics/float_to_int_32_inf1.rs,Other UB,
+tests/fail/intrinsics/rem-by-zero.rs,Other UB,
+tests/fail/intrinsics/float_to_int_32_infneg1.rs,Other UB,
+tests/fail/intrinsics/zero_fn_ptr.rs,Other UB,
+tests/fail/intrinsics/simd-select-invalid-bool.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_overflow.rs,Other UB,
+tests/fail/intrinsics/simd_masked_store_element_misaligned.rs,Other UB,
+tests/fail/intrinsics/intrinsic_target_feature.rs,Excluded,
+tests/fail/intrinsics/copy_overlapping.rs,Other UB,
+tests/fail/intrinsics/float_to_int_32_nan.rs,Other UB,
+tests/fail/intrinsics/assume.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_int_plus_int.rs,Other UB,
+tests/fail/intrinsics/unchecked_div1.rs,Other UB,
+tests/fail/intrinsics/unchecked_sub1.rs,Other UB,
+tests/fail/intrinsics/ptr_metadata_uninit_thin.rs,Other UB,
+tests/fail/intrinsics/cttz_nonzero.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_big5.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_from_oob.rs,Other UB,
+tests/fail/intrinsics/simd-extract.rs,Other UB,
+tests/fail/intrinsics/simd-funnel_shr-too-far.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_big1.rs,Other UB,
+tests/fail/intrinsics/typed-swap-invalid-scalar.rs,Exit 0,miri-tests/pass/intrinsics/typed-swap-invalid-scalar.rs
+tests/fail/intrinsics/exact_div4.rs,Other UB,
+tests/fail/intrinsics/simd-rem-by-zero.rs,Other UB,
+tests/fail/intrinsics/simd-scatter.rs,Baseline UB,miri-tests/fail/baseline/intrinsics/simd-scatter.rs
+tests/fail/intrinsics/funnel_shr.rs,Other UB,
+tests/fail/intrinsics/typed-swap-invalid-array.rs,Other UB,
+tests/fail/intrinsics/float_to_int_32_neg.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_out_of_bounds_neg.rs,Other UB,
+tests/fail/intrinsics/simd-shr-too-far.rs,Other UB,
+tests/fail/intrinsics/simd_masked_load_vector_misaligned.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_big7.rs,Other UB,
+tests/fail/intrinsics/exact_div2.rs,Other UB,
+tests/fail/intrinsics/unchecked_shl.rs,Other UB,
+tests/fail/intrinsics/simd-reduce-invalid-bool.rs,Other UB,
+tests/fail/intrinsics/simd_masked_load_element_misaligned.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_small1.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_infneg1.rs,Other UB,
+tests/fail/intrinsics/div-by-zero.rs,Other UB,
+tests/fail/intrinsics/simd_masked_store_vector_misaligned.rs,Other UB,
+tests/fail/intrinsics/unchecked_add1.rs,Other UB,
+tests/fail/intrinsics/simd-float-to-int.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_big3.rs,Other UB,
+tests/fail/intrinsics/exact_div3.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_inf1.rs,Other UB,
+tests/fail/intrinsics/simd-div-by-zero.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_infneg2.rs,Other UB,
+tests/fail/intrinsics/unchecked_shr.rs,Other UB,
+tests/fail/intrinsics/simd-funnel_shl-too-far.rs,Other UB,
+tests/fail/intrinsics/ctlz_nonzero.rs,Other UB,
+tests/fail/intrinsics/float_to_int_32_nanneg.rs,Other UB,
+tests/fail/intrinsics/unchecked_shl2.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_big4.rs,Other UB,
+tests/fail/intrinsics/disjoint_bitor.rs,Other UB,
+tests/fail/intrinsics/simd-div-overflow.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_from_different_ints.rs,Other UB,
+tests/fail/intrinsics/typed-swap-overlap.rs,Other UB,
+tests/fail/intrinsics/simd-gather.rs,Baseline UB,miri-tests/fail/baseline/intrinsics/simd-gather.rs
+tests/fail/intrinsics/unchecked_mul2.rs,Other UB,
+tests/fail/intrinsics/float_to_int_32_too_small1.rs,Other UB,
+tests/fail/intrinsics/simd-shl-too-far.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_out_of_bounds.rs,Other UB,
+tests/fail/intrinsics/copy_unaligned.rs,Other UB,
+tests/fail/intrinsics/ptr_metadata_uninit_slice_len.rs,Other UB,
+tests/fail/intrinsics/float_to_int_32_too_big2.rs,Other UB,
+tests/fail/intrinsics/copy_overflow.rs,Other UB,
+tests/fail/intrinsics/fast_math_second.rs,Other UB,
+tests/fail/intrinsics/float_to_int_64_too_small2.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_unsigned_overflow.rs,Other UB,
+tests/fail/intrinsics/float_to_int_32_too_big1.rs,Other UB,
+tests/fail/uninit/transmute-pair-uninit.rs,Other UB,
+tests/fail/intrinsics/exact_div1.rs,Other UB,
+tests/fail/tail_calls/cc-mismatch.rs,Other UB,
+tests/fail/intrinsics/uninit_uninhabited_type.rs,Other UB,
+tests/fail/intrinsics/ptr_offset_out_of_bounds_neg2.rs,Other UB,
+tests/fail/tail_calls/signature-mismatch-arg.rs,Other UB,
+tests/fail/uninit/uninit_byte_read.rs,Other UB,
+tests/fail/intrinsics/unchecked_add2.rs,Other UB,
+tests/fail/uninit/padding-enum.rs,Other UB,
+tests/fail/tail_calls/dangling-local-var.rs,Baseline UB,miri-tests/fail/baseline/tail_calls/dangling-local-var.rs
+tests/fail/uninit/padding-struct-in-union.rs,Other UB,
+tests/fail/uninit/padding-pair.rs,Other UB,
+tests/fail/uninit/padding-union.rs,Other UB,
+tests/fail/uninit/uninit_alloc_diagnostic.rs,Other UB,
+tests/fail/uninit/padding-wide-ptr.rs,Other UB,
+tests/fail/uninit/uninit-after-aggregate-assign.rs,Other UB,
+tests/fail/uninit/padding-struct.rs,Other UB,
+tests/fail/tree_borrows/wildcard/gc.rs,Excluded,
+tests/fail/uninit/uninit_alloc_diagnostic_with_provenance.rs,Other UB,
+tests/fail/tree_borrows/reserved/int-protected-write.rs,Excluded,
+tests/fail/tree_borrows/reserved/cell-protected-write.rs,Excluded,
+tests/fail/shims/backtrace/bad-backtrace-resolve-flags.rs,Excluded,
+tests/fail/shims/backtrace/bad-backtrace-size-flags.rs,Excluded,
+tests/fail/shims/backtrace/bad-backtrace-flags.rs,Excluded,
+tests/fail/shims/backtrace/bad-backtrace-resolve-names-flags.rs,Excluded,
+tests/fail/shims/backtrace/bad-backtrace-ptr.rs,Excluded,
+tests/fail/shims/backtrace/bad-backtrace-decl.rs,Excluded,
+tests/fail/match/closures/deref-in-pattern.rs,Other UB,
+tests/fail/match/closures/partial-pattern.rs,Other UB,
+tests/fail/match/closures/uninhabited-variant2.rs,Other UB,
+tests/fail/match/closures/uninhabited-variant1.rs,Other UB,
+tests/fail/tree_borrows/wildcard/cross_tree_update_newer_exposed.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_update_newer_exposed.rs
+tests/fail/tree_borrows/wildcard/single_exposed_disable.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/single_exposed_disable.rs
+tests/fail/tree_borrows/wildcard/cross_tree_update_main_invalid_exposed.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_update_main_invalid_exposed.rs
+tests/fail/tree_borrows/wildcard/protector_release.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/protector_release.rs
+tests/fail/tree_borrows/wildcard/single_exposed_local.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/single_exposed_local.rs
+tests/fail/tree_borrows/wildcard/cross_tree_update_older_invalid_exposed.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_update_older_invalid_exposed.rs
+tests/fail/tree_borrows/wildcard/protected_wildcard.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/protected_wildcard.rs
+tests/fail/tree_borrows/wildcard/cross_tree_update_older.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_update_older.rs
+tests/fail/tree_borrows/wildcard/cross_tree_from_main.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_from_main.rs
+tests/fail/tree_borrows/wildcard/cross_tree_update_main_invalid_exposed2.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_update_main_invalid_exposed2.rs
+tests/fail/tree_borrows/wildcard/cross_tree_update_newer.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_update_newer.rs
+tests/fail/tree_borrows/wildcard/multi_exposed_siblings_local.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/multi_exposed_siblings_local.rs
+tests/fail/tree_borrows/wildcard/cross_tree_update_main.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_update_main.rs
+tests/fail/tree_borrows/wildcard/cross_tree_update_older_invalid_exposed2.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/cross_tree_update_older_invalid_exposed2.rs
+tests/fail/tree_borrows/wildcard/single_exposed_foreign.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/single_exposed_foreign.rs
+tests/fail/tree_borrows/wildcard/multi_exposed_child.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/multi_exposed_child.rs
+tests/fail/tree_borrows/wildcard/subtree_internal_relatedness_wildcard.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/subtree_internal_relatedness_wildcard.rs
+tests/fail/tree_borrows/wildcard/dealloc.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/dealloc.rs
+tests/fail/tree_borrows/wildcard/multi_exposed_child_unique_writer.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/multi_exposed_child_unique_writer.rs
+tests/fail/tree_borrows/wildcard/protector_conflicted.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/protector_conflicted.rs
+tests/fail/tree_borrows/wildcard/multi_exposed_siblings_disable.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/multi_exposed_siblings_disable.rs
+tests/fail/tree_borrows/wildcard/protector_release2.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/protector_release2.rs
+tests/fail/tree_borrows/wildcard/multi_exposed_siblings_foreign.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/multi_exposed_siblings_foreign.rs
+tests/fail/tree_borrows/wildcard/single_exposed_only_ro.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/single_exposed_only_ro.rs
+tests/fail/tree_borrows/wildcard/subtree_internal_relatedness.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/subtree_internal_relatedness.rs
+tests/fail/tree_borrows/wildcard/strongly_protected_wildcard.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/strongly_protected_wildcard.rs
+tests/fail/tree_borrows/wildcard/multi_exposed_siblings_unique_writer.rs,Aliasing UB,miri-tests/fail/aliasing/tree_borrows/wildcard/multi_exposed_siblings_unique_writer.rs
+tests/fail/shims/fs/isolated_file.rs,Exit 1,

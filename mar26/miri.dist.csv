@@ -1,0 +1,7 @@
+category,num_tests
+Aliasing UB,92
+Baseline UB,26
+Excluded,134
+Exit 0,287
+Exit 1,62
+Other UB,259

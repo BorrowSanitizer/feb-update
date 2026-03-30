@@ -2,7 +2,6 @@ import csv
 import json
 import os
 
-
 def extract_times_to_csv(input_files, output_file):
     with open(output_file, "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
@@ -31,7 +30,6 @@ def extract_times_to_csv(input_files, output_file):
         print(f"\nSuccessfully wrote {data_count} total data points to {output_file}")
     else:
         print("No data extracted.")
-
 
 if __name__ == "__main__":
     dir = "./target/bench/"
